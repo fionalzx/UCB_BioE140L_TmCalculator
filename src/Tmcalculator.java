@@ -56,9 +56,9 @@ public class Tmcalculator {
         seq = seq.toUpperCase();
         double H = computesDelta(seq)[0];
         double S = computesDelta(seq)[1];
-        double PrimerConcentration = 0.2;
+        double PrimerConcentration = 0.0000002;
         double NaConcentration = 0.05;
-        double Tm = (abs(H) * 1000 - 3400) / (abs(S) + 1.987 * log(1 / PrimerConcentration)) + 16.6 * log10(NaConcentration) - 273.15;
+        double Tm = abs(H) * 1000 / (abs(S) + 1.987 * log(1 / PrimerConcentration)) + 16.6 * log10(NaConcentration) - 273.15;
         return Tm;
     }
 
@@ -106,7 +106,7 @@ public class Tmcalculator {
     public static void main(String[] args) throws Exception {
         Tmcalculator tmCalculator = new Tmcalculator();
         tmCalculator.initiate();
-        double result = tmCalculator.run("CGCGTACGCGTACGCG");
+        double result = tmCalculator.run("ccaaaAGATCTatgagcggcttcccccgcag");
         System.out.println("Tm is: " + result);
     }
 }
