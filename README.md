@@ -11,8 +11,7 @@ This version of Tm Calculator is developed based on the nearest neighbor method 
 
 CT denotes for the total oligonucleotide strand concentration: 
 - CT = [DNA·primer]/([DNA])([primer]).
-Assuming there are excessive primers;
-- CT ≈ 1/[primer].
+- Assuming there are excessive primers: CT ≈ 1/[primer].
 
 Finally, we can apply salt adjustion to Tm for Na+ concentration based on Nakano et al.(1999).
 
