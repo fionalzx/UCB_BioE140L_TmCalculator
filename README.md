@@ -16,8 +16,8 @@ Assuming there are excessive primers, CT ≈ 1/[primer]
 Finally, we can apply salt adjustion to Tm for Na+ concentration based on Nakano et al.(1999).
 
 Therefore, we get the formula for Tm in K:
-Tm = ΔH° / (ΔS° + Rln(1/[primer])) + 16.6*log([Na+])
-To convert Tm in K to °C, we just need to subtract 273.15 from Tm in K.
+Tm = ΔH° / (ΔS° + Rln(1/[primer])) + 16.6*log([Na+]).
+- To convert Tm in K to °C, we just need to subtract 273.15 from Tm in K.
 
 ## Assumptions
 
