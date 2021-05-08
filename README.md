@@ -5,19 +5,20 @@
 
 This version of Tm Calculator is developed based on the nearest neighbor method for thermodynamic calculations. The main equation used is based on Equation 3 in SantaLucia, J Jr.(1998). 
 
-Tm = ΔH°/(ΔS°+RlnCT)
+- Tm = ΔH°/(ΔS°+RlnCT)
 
 ΔH° denotes for the prediction of enthaply during the process and ΔS° denotes for the prediction of entropy. Use the unified NN parameters and method in Equation 1 in SantaLucia, J Jr.(1998), we can calculate the prediction of enthaply and entropy after identifying all the possible Watson–Crick NNs in our sequence.
 
-CT denotes for the total oligonucleotide strand concentration
-CT = [DNA·primer]/([DNA])([primer])
-Assuming there are excessive primers, CT ≈ 1/[primer]
+CT denotes for the total oligonucleotide strand concentration: 
+- CT = [DNA·primer]/([DNA])([primer]).
+Assuming there are excessive primers;
+- CT ≈ 1/[primer].
 
 Finally, we can apply salt adjustion to Tm for Na+ concentration based on Nakano et al.(1999).
 
-Therefore, we get the formula for Tm in K:
-Tm = ΔH° / (ΔS° + Rln(1/[primer])) + 16.6*log([Na+])
-To convert Tm in K to °C, we just need to subtract 273.15 from Tm in K.
+Therefore, we get the formula for Tm in K: 
+- Tm = ΔH° / (ΔS° + Rln(1/[primer])) + 16.6*log([Na+]).
+- To convert Tm in K to °C, we just need to subtract 273.15 from Tm in K.
 
 ## Assumptions
 
